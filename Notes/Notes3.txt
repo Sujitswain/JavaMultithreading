@@ -1,0 +1,44 @@
+    JAVA:
+
+            Java provides robust support for multithreading, allowing developers
+        to create applications that can perform multiple tasks simultaneously, 
+        improving performing and responsiveness.
+
+            Multithreading is the concurrent execution of two or more threads to 
+        maximize the utilization of the CPU. Java's multithreading capabilities 
+        are part of the ** java.lang ** package, making it easy to implement 
+        concurrent execution.
+
+    SINGLE-CORE ENV:
+
+            In a single-core environment, Java's multithreading is managed by 
+        the JVM and the OS, which switch between threads to give the illusion of 
+        concurrency.
+
+            The threads share the single core, and time-slicing is used to manage
+        thread execution.
+
+    MULTI-CORE ENV:
+
+            In a multi-core environment, Java's multithreading can take full 
+        advantage of the available cores.
+
+            The JVM can distribute threads across multiple cores, allowing
+        true parallel execution of threads.
+
+    MULTITASKING & MULTITHREADING:
+
+            Multitasking can be achieved through multithreading where each task
+        is divided into threads that are managed concurrently.
+
+            While multitaksing typically refers to the running of multiple
+        applications, multithreading is more granular dealing with multiple 
+        threads within the same applications or process.
+
+            Multitasking operates at the level of processes, which are the 
+        operating system's primary units of execution.
+
+            Multithreading operates at the level of threads, which are smaller
+        units within a process.
+
+        

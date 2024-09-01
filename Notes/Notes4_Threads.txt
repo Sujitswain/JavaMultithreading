@@ -1,0 +1,13 @@
+
+    THREADS:
+
+            A thread is a lightweight process, the smallest unit of
+        processing. Java supports multithreading through its 
+        ** java.lang.Thread class ** and
+        ** java.lang.Runnable interface **
+
+    MAIN THREAD:
+
+            When a java program starts, one thread begins running 
+        immediately, which is called the main thread. This thread is 
+        responsible for executing the main method of a program.

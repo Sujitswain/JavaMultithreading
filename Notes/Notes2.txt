@@ -1,0 +1,66 @@
+THREAD:
+        A thread is the smallest unit of execution within a process.
+    A process can have multiple threads, with share the same resources
+    but can run independently.
+
+    eg.
+        A web browser like Google Chrome might use multiplethreads for 
+    different tabs, with each tab running as a separate thread.
+
+
+MULTITASKING:
+        Multitasking allows an operating system to run multiple processes
+    simutaneously. On single-core CPUs, this is done through time-sharing,
+    rapidly switching between tasks. On multi-core CPUs, true parallel
+    execution occurs, with tasks distributed across cores. The OS sheduler 
+    balances the load, ensuring efficient and responsive system performance.
+
+        It utilizes the capabilities of a CPU and its cores. When an operating
+    system performs multitasking , it can assign different tasks to different
+    cores. This is more efficient than assigning all tasks to a single core.
+
+
+MULTITHREADING:
+        Multithreading refers to the ability to execute multiple threads within
+    a single process concurrently.
+
+        It enhances the efficiency of multitasking by breaking down individual 
+    tasks into smaller sub-atsks or threads. These threads can be processed 
+    simultaneously, making better use of the CPU's capabilities.
+
+
+SINGLE-CORE SYSTEM:
+        In a single-core system both threads and process are managed by the OS
+    scheduler through time slicing and context switching to create the illusion
+    of simultaneous execution.
+
+
+MULTI-CORE SYSTEM:
+        In a multi-core system both threads and process can run in true parallel
+    on different cores, with the OS scheduler distributing tasks across the cores 
+    to optimize performance.
+
+
+TIME_SLICING:
+        Time slicing divides CPU time into small intervals called time slices or 
+    quanta.
+
+        The OS scheduler allocates these time slices to different process and 
+    threads, ensuring each gets a fair share of CPU time.
+
+        This prevents any single process or thread from monopolizing the CPU,
+    improving responsiveness and enabling concurrent execution.
+
+
+CONTEXT SWITCHING:
+        Context switching is the process of saving the state of a currently
+    running process or thread and loading the state of the next one to be 
+    executed.
+
+        When a process or thread's time slice expires, the OS scheduler
+    performs a context switch to move the CPU's focus to another process
+    or thread.
+
+        This allows multiple process and threads to share the CPU, giving the 
+    appearance of simultaneous execution on a single-core CPU or improving 
+    parallelism on multi-core CPUs.
